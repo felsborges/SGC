@@ -14,6 +14,7 @@ namespace SGC.Infrastructure.Repository
         {
 
         }
+
         public Cliente ObterPorProfissao(int clienteId)
         {
             return Buscar(x => x.ProfissoesClientes.Any(p => p.ClienteId == clienteId))
